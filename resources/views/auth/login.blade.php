@@ -7,6 +7,10 @@
 </head>
 <body>
 
+    @if (request()->query('warning')==='1')
+        <p>Verileri görmek için giriş yapmalısınız..</p>
+    @endif
+
     <h1>Giriş Yap</h1>
 
     <form method="POST" action="{{ route('login.store') }}">
@@ -32,6 +36,8 @@
 
         <button type="submit">Giriş Yap</button>
     </form>
+
+    
  
     
 </body>
