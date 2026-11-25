@@ -17,6 +17,8 @@
     @forelse ($products as $product)
        <p> {{ $product->name }} - {{ $product->price }} TL</p>
        <a href="{{ route('products.show', $product->id) }}">Detayları Gör</a>
+
+       <a href="{{ route('products.edit', $product->id) }}">Düzenle</a>
     @empty
         <p>Henüz ürün eklenmedi.</p>
     @endforelse

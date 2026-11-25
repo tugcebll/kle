@@ -10,5 +10,6 @@
     <h1>Kle Ürün Sistemi</h1>
     <p>Ana sayfaya hoş geldiniz</p>
     
+    <a href="{{ route('products.index') }}">Ürün Listesine Git</a>
 </body>
 </html>
